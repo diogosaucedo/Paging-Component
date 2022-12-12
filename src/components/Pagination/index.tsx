@@ -1,28 +1,31 @@
 import React from 'react';
-import { Paging, Item, Span, Link } from './styles';
+import * as Styles from './styles';
 import pagination from '../../utils/Pagination';
+import PaginationType from './type';
 
-type PaginationParams = { total: number; activePage: number };
+const Pagination = ({ total = 10, activePage = 5 }: PaginationType) => {
+  if (total < activePage) {
+    return <Styles.Span>total needs to be greater than activePage</Styles.Span>;
+  }
 
-const Pagination = ({ total, activePage }: PaginationParams): JSX.Element => {
   return (
-    <Paging>
+    <Styles.Paging>
       {pagination({ total, activePage }).map((page, index) =>
         page === '...' ? (
-          <Item key={index}>
-            <Span>{page}</Span>
-          </Item>
+          <Styles.Item key={index}>
+            <Styles.Span>{page}</Styles.Span>
+          </Styles.Item>
         ) : activePage === page ? (
-          <Item key={index} active>
-            <Span active>{page}</Span>
-          </Item>
+          <Styles.Item key={index} active>
+            <Styles.Span active>{page}</Styles.Span>
+          </Styles.Item>
         ) : (
-          <Item key={index}>
-            <Link>{page}</Link>
-          </Item>
+          <Styles.Item key={index}>
+            <Styles.Link>{page}</Styles.Link>
+          </Styles.Item>
         ),
       )}
-    </Paging>
+    </Styles.Paging>
   );
 };
 export default Pagination;

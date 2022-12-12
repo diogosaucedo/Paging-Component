@@ -1,7 +1,8 @@
-import * as Styles from './styles';
 import React from 'react';
+import * as Styles from './styles';
+import ContainerType from './type';
 
-const Container = ({ children }: { children: JSX.Element[] | JSX.Element }) => {
+const Container = ({ children }: ContainerType) => {
   return <Styles.Container>{children}</Styles.Container>;
 };
 

@@ -39,8 +39,27 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+### `npm run storybook`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+It will start Storybook locally and output the address. Depending on your system configuration, it will automatically open the address in a new browser tab, and you'll be greeted by a welcome screen.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### `npm run build-storybook`
+
+Running `npm run build-storybook` will output a static Storybook in the `storybook-static` directory, which can then be deployed to any static site hosting service.
+
+## Pagination Component
+
+### Resume
+
+This project applies the logical rules for creating a pagination component using TypeScript and TDD. Components are assembled using React, TypeScript, Styled-components, and Storybook.
+
+The project itself is a variation of the component taught by Fernando Daciuk in his “React Ninja” course. All rights belongs to the same.
+
+### Technologies
+
+<div align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="40" width="56" alt="typescript logo"  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" width="56" alt="react logo"  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" height="40" width="56" alt="jest logo"  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/storybook/storybook-original.svg" height="40" width="56" alt="storybook logo"  />
+</div>

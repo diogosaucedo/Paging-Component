@@ -69,11 +69,17 @@
     "@typescript-eslint/parser": "^5.40.1",
     "babel-plugin-named-exports-order": "^0.0.2",
     "commitizen": "^4.2.6",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.31.10",
     "prettier": "^2.7.1",
     "prop-types": "^15.8.1",
     "webpack": "^5.75.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

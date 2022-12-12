@@ -1,7 +1,8 @@
 import * as Styles from './styles';
 import React from 'react';
+import TitleType from './type';
 
-const Title = ({ children }: { children: string }) => {
+const Title = ({ children }: TitleType) => {
   return <Styles.Title>{children}</Styles.Title>;
 };
 
